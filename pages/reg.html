@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <form class="w-50 position-absolute top-50 start-50 translate-middle">
+        <h3 class="text-center">Регистрация</h3>
+        <div class="">
+          <label for="log" class="form-label">Логин</label>
+          <input type="text" class="form-control" id="log" required>
+        </div>
+
+        <div class="">
+          <label for="pas" class="form-label">Пароль</label>
+          <input type="password" class="form-control" id="pas" aria-describedby="pasH" required>
+          <div id="pasH" class="form-text">*минимум 6 символов</div>
+        </div>
+
+        <div class="">
+          <label for="nam" class="form-label">ФИО</label>
+          <input type="text" class="form-control" id="nam" required>
+        </div>
+
+        <div class="">
+          <label for="pho" class="form-label">Телефон</label>
+          <input type="tel" class="form-control" id="pho" aria-describedby="phoH" required>
+          <div id="phoH" class="form-text">*+7(XXX)-XXX-XX-XX</div>
+        </div>
+
+        <div class="">
+          <label for="ema" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="ema" aria-describedby="emaH" required>
+          <div id="emaH" class="form-text"></div>
+        </div>
+        
+        <button type="submit" class="btn btn-success mt-3">Зарегистрироваться</button>
+      </form>
+</body>
+</html>
